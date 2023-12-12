@@ -1233,7 +1233,7 @@ class _ExtendedImageState extends State<ExtendedImage>
   void _loadFailed(dynamic exception, StackTrace? stackTrace) {
     setState(() {
       _lastStack = stackTrace;
-      _lastException = exception;
+      _lastException = null;
       _loadState = LoadState.failed;
     });
 
